@@ -1,0 +1,11 @@
+{
+  "loadEagerly": [
+    "./app/**/*.js*",
+    "./node_modules/react/**/*.js",
+    "./node_modules/react-dom/**/*.js"
+  ],
+  "plugins": {
+    "es_modules": {},
+    "node": {}
+  }
+}

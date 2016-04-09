@@ -1,0 +1,18 @@
+{
+  "presets": ["stage-0", "react", "es2015"],
+  "env": {
+    "production": {
+      "plugins": [
+        "syntax-jsx",
+        "transform-class-properties"
+      ]
+    },
+    "development": {
+      "presets": ["react-hmre"],
+      "plugins": [
+        "syntax-jsx",
+        "transform-class-properties"
+      ]
+    }
+  }
+}

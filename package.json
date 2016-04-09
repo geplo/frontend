@@ -1,0 +1,34 @@
+{
+  "name": "geplo-frontend",
+  "version": "0.0.1",
+  "description": "Frontend boilerplate",
+  "scripts": {
+    "start": "NODE_ENV=development node server.js",
+    "build": "NODE_ENV=production webpack -p",
+    "lint":  "eslint --ext .jsx --ext .js app",
+    "test":  "echo TODO; exit 1"
+  },
+  "author": {
+    "email": "guillaume@charmes.net",
+    "name": "Guillaume J. Charmes"
+  },
+  "license": "MIT",
+  "contributors": [],
+  "maintainers": [
+    {
+      "name": "Guillaume J. Charmes",
+      "email": "guillaume@charmes.net"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/geplo/frontend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geplo/frontend.git"
+  },
+  "dependencies": {
+    "react": "^15.0",
+    "react-dom": "^15.0.1"
+  }
+}

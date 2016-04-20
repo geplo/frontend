@@ -1,8 +1,9 @@
-const path     = require('path');
-const express  = require('express');
-const webpack  = require('webpack');
-const config   = require('./webpack.config');
-const app      = express();
+const path = require('path');
+const express = require('express');
+const webpack = require('webpack');
+const config = require('./webpack.config');
+
+const app = express();
 const compiler = webpack(config);
 
 app.use(require('webpack-dev-middleware')(compiler, {
@@ -18,11 +19,11 @@ app.use(require('webpack-hot-middleware')(compiler));
 
 app.use('/static', express.static('static'));
 
-app.get('*', function(req, res) {
+app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'static/index.html'));
 });
 
-app.listen(process.env.HOST_PORT || 8080, '0.0.0.0', function(err) {
+app.listen(process.env.HOST_PORT || 8080, '0.0.0.0', err => {
   if (err) {
     console.log(err);
     return;

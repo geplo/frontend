@@ -125,6 +125,10 @@ of sync with docker. Run `make clean` to start fresh.
 As `npm` does not support target file name, we need to move file around. If something goes wrong or
 if the process is interrupted, you might ended in a "corrupted" state. Revert the `package.json` should solve the issue.
 
+### Misc
+
+- `npm ERR! network getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443` This is due to a DNS issue with the Docker VM. Restart the VM should fix the issue: `docker-machine restart default` (where `default` is your machine name.
+
 ## TODOs (help needed)
 
 Random thoughts on what I want to do in the (near) future:
